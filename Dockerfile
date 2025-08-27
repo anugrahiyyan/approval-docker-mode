@@ -14,6 +14,7 @@ COPY ./bgvideos-leaveform.mp4 /var/www/html/
 # Copy folders
 COPY ./down /var/www/html/down
 COPY ./.well-known /var/www/html/.well-known
+COPY ./images /var/www/html/images
 
 # Allow .htaccess overrides globally
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
