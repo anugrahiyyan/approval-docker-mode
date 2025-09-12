@@ -91,6 +91,21 @@
   </div>
 
   <script>
+    document.getElementById('openFormBtn').addEventListener('click', function () {
+      // Show loading message
+      document.getElementById('loadingMessage').classList.remove('d-none');
+
+      // Simulate delay then open form
+      setTimeout(() => {
+        window.open("https://service.satuimpianbersama.com/status/live", "_blank", "noopener,noreferrer");
+        setTimeout(() => {
+          document.getElementById('loadingMessage').classList.add('d-none');
+        }, 3000);
+      }, 1000);
+    });
+  </script>
+
+  <script>
     tsParticles.load("tsparticles", {
       particles: {
         number: {
@@ -157,35 +172,6 @@
         }
       },
       detectRetina: true
-    });
-  </script>
-
-  <script>
-    document.getElementById('openFormBtn').addEventListener('click', function () {
-      // Show loading message
-      document.getElementById('loadingMessage').classList.remove('d-none');
-
-      // Simulate delay then open form
-      setTimeout(() => {
-        window.open("https://service.satuimpianbersama.com/status/live", "_blank", "noopener,noreferrer");
-        setTimeout(() => {
-          document.getElementById('loadingMessage').classList.add('d-none');
-        }, 3000);
-      }, 1000);
-    });
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const options = {
-        outerStyle: "circle",
-        hoverEffect: "circle-move",
-        hoverItemMove: false,
-        defaultCursor: false,
-        outerWidth: 30,
-        outerHeight: 30
-      };
-      magicMouse(options);
     });
   </script>
 </body>
