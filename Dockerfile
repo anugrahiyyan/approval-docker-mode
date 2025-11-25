@@ -6,8 +6,8 @@ RUN a2enmod rewrite
 # Copy application files
 COPY ./index.html /var/www/html/
 COPY ./.htaccess /var/www/html/
-COPY ./privacy.html /var/www/html/
-COPY ./terms.html /var/www/html/
+COPY ./privacy-policy.html /var/www/html/
+COPY ./tos.html /var/www/html/
 COPY ./testing.html /var/www/html/
 COPY ./bgvideos-leaveform.mp4 /var/www/html/
 
