@@ -9,7 +9,6 @@ COPY ./.htaccess /var/www/html/
 COPY ./privacy-policy.html /var/www/html/
 COPY ./tos.html /var/www/html/
 COPY ./testing.html /var/www/html/
-COPY ./bgvideos-leaveform.mp4 /var/www/html/
 
 # Copy folders
 COPY ./down /var/www/html/down
